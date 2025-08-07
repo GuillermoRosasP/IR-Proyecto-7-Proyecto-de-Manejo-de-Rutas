@@ -1,0 +1,210 @@
+
+/* Variables y colores IMSS */
+:root {
+  --verde-imss: #005835;
+  --verde-acento: #00965E;
+  --gris-claro: #F2F2F2;
+  --texto-oscuro: #333333;
+  --blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--gris-claro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--texto-oscuro);
+}
+
+/* Navbar fijo, botones a la derecha con estilo botón */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--verde-imss);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.btn-nav {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--blanco);
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: var(--verde-acento);
+}
+
+/* Main con padding para evitar overlay con navbar */
+main {
+  padding-top: 80px;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 2rem;
+}
+
+/* Estilos generales para h1, h2 */
+h1, h2 {
+  color: var(--verde-imss);
+}
+
+/* Estilo para la bienvenida e instrucciones en Home */
+.home-instrucciones ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* Estilos para la lista y filtro en Citas */
+input[type="text"].filtro {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--verde-acento);
+  border-radius: 6px;
+}
+
+/* Grid para citas separadas por días */
+.citas-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Cada columna de día */
+.cita-columna {
+  flex: 1;
+  min-width: 200px;
+  background: var(--gris-claro);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+}
+
+.cita-columna h3 {
+  color: var(--verde-acento);
+  margin-bottom: 1rem;
+}
+
+/* Tarjetas individuales de cita */
+.cita-card {
+  background: white;
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.cita-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Enlaces para detalles */
+.cita-link {
+  text-decoration: none;
+  color: var(--verde-imss);
+  font-weight: 600;
+}
+
+.cita-link:hover {
+  text-decoration: underline;
+}
+
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-registro label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--verde-imss);
+}
+
+.form-registro input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 0.3rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-registro input:focus {
+  border-color: var(--verde-acento);
+  outline: none;
+}
+
+.form-registro button {
+  background-color: var(--verde-imss);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-registro button:hover {
+  background-color: var(--verde-acento);
+}
+
+.filtro {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.citas-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.cita-columna {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.cita-card {
+  display: block;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #00965E; /* verde IMSS */
+  text-decoration: none;
+  color: #005835;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.cita-card:hover {
+  background-color: #E0F7EA;
+}

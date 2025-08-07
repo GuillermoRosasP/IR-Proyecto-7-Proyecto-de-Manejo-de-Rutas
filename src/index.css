@@ -1,0 +1,74 @@
+/* 🎨 Estilos globales para toda la app */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Estilo del navbar fijo con color del IMSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #00594F;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  gap: 1rem;
+}
+
+/* Botones del navbar */
+.navbar button {
+  background-color: white;
+  color: #00594F;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Espacio para compensar navbar fijo */
+.contenido {
+  margin-top: 80px;
+  padding: 2rem;
+}
+
+/* Estilo para las columnas de citas */
+.citas-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.columna-citas {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Campo de búsqueda */
+.buscador {
+  margin-bottom: 1rem;
+}
+
+.buscador input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
